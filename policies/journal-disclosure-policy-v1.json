@@ -1,0 +1,21 @@
+{
+  "policy_name": "ORPI Journal Disclosure Policy",
+  "policy_version": "1.0.0",
+  "public_categories": [
+    "Governance decisions affecting ODS-Foundation specifications",
+    "Architectural choices about ODS itself",
+    "Release decisions, deprecation decisions, version bumps",
+    "Public commitments to roadmap, dates, or calendar items",
+    "Reflective patterns recorded at least 30 days after the underlying tactical decisions",
+    "Meta-decisions about journal operation itself"
+  ],
+  "private_categories": [
+    "Specific individuals being considered for outreach",
+    "Specific organizations being evaluated for partnership or recruitment",
+    "Confidence levels regarding third-party responses or behavior",
+    "Competitive observations",
+    "Pre-execution tactical details where publicity could materially affect outcomes",
+    "Operational priorities not yet publicly committed"
+  ],
+  "migration_rule": "Entries recorded privately may be migrated to public when at least one of the following holds: (a) sufficient time has passed that operational sensitivity has expired, (b) third parties referenced have engaged voluntarily and consent to disclosure, or (c) the matter has become public through independent means. The Steward decides case by case."
+}

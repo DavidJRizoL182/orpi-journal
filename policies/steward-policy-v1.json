@@ -1,0 +1,29 @@
+{
+  "policy_name": "ORPI Steward Operating Policy",
+  "policy_version": "1.0.0",
+  "lenses": [
+    {
+      "name": "Survival",
+      "question": "Does this put the continuity of the organism at risk?"
+    },
+    {
+      "name": "Compounding",
+      "question": "Is ORPI smarter after this than before?"
+    },
+    {
+      "name": "Narrative",
+      "question": "Does this reinforce or dilute category position?"
+    },
+    {
+      "name": "Inevitability",
+      "question": "Does this remove a reason capital could rationally say no?"
+    }
+  ],
+  "principles": [
+    "Survival > brilliance",
+    "Discipline is the asset, velocity follows",
+    "Public iteration > private perfection",
+    "Memo before code on structural changes",
+    "Council reviews what it has not seen; never approves blind"
+  ]
+}

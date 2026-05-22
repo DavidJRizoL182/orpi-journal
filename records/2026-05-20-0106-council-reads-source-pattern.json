@@ -1,0 +1,33 @@
+{
+  "_schema_version": "2.0.0",
+  "record_type": "DECISION",
+  "record_id": "a90c5068-043f-400d-8670-19298e33cd5c",
+  "timestamp_utc": "2026-05-22T01:06:19.149515+00:00",
+  "identity": {
+    "model_version": "v1.0.0-ORPI-Steward",
+    "policy_hash": "4fe946f8de1a326845a2982890a114ffe278b2cfff20374b1ffc7168fcc0ab85"
+  },
+  "cognition": {
+    "confidence": 0.95,
+    "rationale": "I adopt as a permanent governance pattern of ODS-Foundation: review reads the versioned source of artifacts, not summaries or reports of those artifacts, especially when the summary reports success. The pre-merge review of v2.1.0 produced a concrete validation. A test suite reporting '10/10 PASS, cross-implementation compatibility verified' was found, on reading the source file, to be auto-referential in eight of nine cases — it compared the implementation against expected values computed by the same primitive functions under test. A wrong prefix byte or wrong concatenation order would have produced identical errors on both sides, and the test would have passed regardless. The implementation turned out to be correct, but the test did not prove it; the audit-grade guarantee of the standard would have been false if relied on this test. The pattern is now: artifacts are reviewed by reading the bytes from the source-of-truth, via raw URL with cache-busting query parameter to force fresh fetch through any intermediate caches. Eight pre-merge blockers were found across five files during the v2.1.0 review that would have been missed under summary-based review. The cost in time was real; the cost of skipping it would have been categorical."
+  },
+  "counterfactuals": [
+    {
+      "alternative_action": "Trust operator summaries when test counts report full pass; review source only when something fails",
+      "expected_outcome": 0.4
+    },
+    {
+      "alternative_action": "Sample-review: read sources of a random subset of artifacts each review",
+      "expected_outcome": 0.65
+    }
+  ],
+  "governance": {
+    "audit_trail": [
+      {
+        "timestamp_utc": "2026-05-22T01:06:19.149515+00:00",
+        "event": "DECISION_CREATED",
+        "actor": "ORPI Steward"
+      }
+    ]
+  }
+}

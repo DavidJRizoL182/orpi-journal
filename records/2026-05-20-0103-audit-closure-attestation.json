@@ -1,0 +1,33 @@
+{
+  "_schema_version": "2.0.0",
+  "record_type": "DECISION",
+  "record_id": "fb0ccbf5-ed95-4c21-92fa-1eeafdc7164b",
+  "timestamp_utc": "2026-05-22T01:03:19.149515+00:00",
+  "identity": {
+    "model_version": "v1.0.0-ORPI-Steward",
+    "policy_hash": "4fe946f8de1a326845a2982890a114ffe278b2cfff20374b1ffc7168fcc0ab85"
+  },
+  "cognition": {
+    "confidence": 0.95,
+    "rationale": "I declare six of the eight findings from the v1.0.0 critical audit closed through the coordinated release sequence: v1.1.0 (immutability correctness via event sourcing, metrics formalization for DPI/CFR/LV, policy_hash canonicalization via RFC 8785 JCS, SemVer consistency), v2.0.0 (domain-decoupled Core + Profile architecture, ODS-Finance/v1 authored, six profiles reserved), and v2.1.0 (Merkle tree specification via RFC 6962 with store-assigned sequence_number ordering, CHECKPOINT record_type, Standard-level log tamper evidence). Each release was published publicly on GitHub. v1.0 was deprecated publicly within seventy-two hours of the immutability finding. v2.0 records remain valid; the Merkle log begins with v2.1.0 records, an explicit genesis boundary. The two remaining findings (#7 Technical Committee with real names; #8 multi-stakeholder governance addressing the judge-and-party problem) are not specification problems — they require community work and are tracked separately under the outreach program. I consider the technical audit closed as of this declaration."
+  },
+  "counterfactuals": [
+    {
+      "alternative_action": "Declare findings closed but qualified as 'self-declared, pending external verification'",
+      "expected_outcome": 0.85
+    },
+    {
+      "alternative_action": "Defer the declaration until at least one independent implementation exists",
+      "expected_outcome": 0.5
+    }
+  ],
+  "governance": {
+    "audit_trail": [
+      {
+        "timestamp_utc": "2026-05-22T01:03:19.149515+00:00",
+        "event": "DECISION_CREATED",
+        "actor": "ORPI Steward"
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "_schema_version": "2.0.0",
+  "record_type": "DECISION",
+  "record_id": "def08e79-76cc-4da1-a011-80984e5033d6",
+  "timestamp_utc": "2026-05-26T12:02:55.416602Z",
+  "identity": {
+    "model_version": "v1.0.0-ORPI-Steward",
+    "policy_hash": "4fe946f8de1a326845a2982890a114ffe278b2cfff20374b1ffc7168fcc0ab85"
+  },
+  "cognition": {
+    "confidence": 0.9,
+    "rationale": "I adopt the CLAUDE.md pattern — originated by Forrest Chang (Vibe Spec Method, May 2026) and informed by Andrej Karpathy's critique of AI coding agents — as permanent operational discipline across all ODS-Foundation work. A CLAUDE.md file has been committed to the root of each of the three repositories: ods-specification (merge commit 193995f), orpi-journal (merge commit 38ed4ca), and orpi-journal-private (merge commit f6f1c3c). The mechanism is that Claude Code reads CLAUDE.md automatically at the start of every session, so the constraints apply without requiring the Steward to restate them. The four universal rules — think before acting, simplicity first, surgical changes, goal-driven — are taken in spirit from Chang's formulation with attribution preserved in each file's Provenance section. Each repository's file also encodes repository-specific institutional constraints: ods-specification has the most restrictive set (memo-driven workflow for normative artifacts, prohibition of direct main commits, test vector independence requirement, honesty principle); the journal repositories encode immutability, validation discipline, and tier-appropriate disclosure rules. This pattern is complementary to the prior adoption of 'Council reads source, not summaries' recorded in this journal on 2026-05-20: the source-reading pattern protects review-time discipline, while the CLAUDE.md pattern protects work-time discipline. The operator operates under explicit institutional constraints from session start, without relying on prompt-time recall by the Steward. Together they cover the two failure modes most likely to degrade work quality over time: drift in operator behavior, and over-trust in reports during review."
+  },
+  "counterfactuals": [
+    {
+      "alternative_action": "Continue relying on the Steward restating institutional constraints each session via prompt",
+      "expected_outcome": 0.55
+    },
+    {
+      "alternative_action": "Adopt CLAUDE.md only in ods-specification where rigor matters most, skip journal repos",
+      "expected_outcome": 0.7
+    },
+    {
+      "alternative_action": "Write a custom institutional discipline document from scratch without crediting Chang or Karpathy",
+      "expected_outcome": 0.65
+    }
+  ],
+  "governance": {
+    "audit_trail": [
+      {
+        "timestamp_utc": "2026-05-26T12:02:55.416602Z",
+        "event": "DECISION_CREATED",
+        "actor": "ORPI Steward"
+      }
+    ]
+  }
+}

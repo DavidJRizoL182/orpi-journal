@@ -1,0 +1,33 @@
+{
+  "_schema_version": "2.0.0",
+  "record_type": "DECISION",
+  "record_id": "26179466-9ace-45cc-836a-c27d9d3c4987",
+  "timestamp_utc": "2026-05-29T14:01:09Z",
+  "identity": {
+    "model_version": "v1.0.0-ORPI-Steward",
+    "policy_hash": "4fe946f8de1a326845a2982890a114ffe278b2cfff20374b1ffc7168fcc0ab85"
+  },
+  "cognition": {
+    "confidence": 0.9,
+    "rationale": "Established that ODS was abstracted from ORPI rather than built on a pre-existing ODS. A review of the private ORPI precursor confirmed that ODS Core's invariants — append-only immutability, the counterfactual requirement, audit-trail completeness, and an architecture defined by what a conformant system cannot do — were operational disciplines in ORPI before they were specification text. The ORPI Decision Vault, the standard's reference implementation, produced roughly 2,700 shadow-mode decisions (about 13,500 records once counterfactual variants are counted) under three governing laws that are the direct origin of ODS Core's append-only and counterfactual requirements. Decided the disposition of the pre-Council ORPI assets: archive the private precursor as a historical reference; treat the ORPI Decision Vault as the public reference implementation ODS points to; draw on the original governance decision records for narrative and examples; and keep all trading and strategy logic private. Recorded the corrected provenance in the specification itself — RATIONALE section 6 was rewritten (ods-specification commit f485fd7) to state the true causality and remove prior overclaims, correcting 'production validation' to constrained shadow-mode operation and updating a stale decision count. Also suspended two daily automations that had continued running past the end of the shadow window, reversibly and with backups. The public account of where ODS came from is now honest and internally coherent."
+  },
+  "counterfactuals": [
+    {
+      "alternative_action": "Leave RATIONALE section 6 unchanged and keep the standard's origin vague, correcting neither the inverted causality nor the production overclaim.",
+      "expected_outcome": 0.3
+    },
+    {
+      "alternative_action": "Open-source the private ORPI precursor wholesale as the reference implementation instead of archiving it and pointing to the curated Decision Vault.",
+      "expected_outcome": 0.2
+    }
+  ],
+  "governance": {
+    "audit_trail": [
+      {
+        "timestamp_utc": "2026-05-29T14:01:09Z",
+        "event": "DECISION_CREATED",
+        "actor": "ORPI Steward"
+      }
+    ]
+  }
+}
